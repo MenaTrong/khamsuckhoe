@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16635810141"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-16635810141');
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Tag name web -->
+	<link href="Images/Images-logo/bvxa.png" rel="icon">
+	<link href="Images/Images-logo/bvxa.png" rel="apple-touch-icon">
+	<title>Khám sức khoẻ tổng quát - Bệnh Viện Đa khoa Xuyên Á</title>
+
+	<!-- Google icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link href="assets/css/variables.css" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="CSS/util.css" rel="stylesheet">
+
+	<!-- Link đến Swiper CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<!-- Link đến Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- Thêm CSS của Tagify -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.9.8/tagify.css">
+
+	<!-- Thêm JavaScript của Tagify -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tagify/4.9.8/tagify.min.js"></script>
+	
+	<style>
+		/* Thay đổi màu nền và đường viền của các thẻ */
+.tagify {
+	border: none;
+	/* Thay đổi màu và độ dày viền */
+	border-radius: 5px;
+	/* Thay đổi bo góc của khung input */
+	background-color: rgb(244, 244, 244);
+	/* Thay đổi màu nền của khung input */
+	min-height: 100px;
+	height: auto;
+	padding: 5px;
+}
+
+.tagify__tag {
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	color: #333;
+}
+
+/* Thay đổi màu nền và đường viền khi hover trên các thẻ */
+.tagify__tag:hover {
+	background-color: #e0e0e0;
+}
+
+.tagify__dropdown {
+	border-radius: 5px;
+	/* Bo góc của dropdown */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Bóng đổ của dropdown */
+	background-color: #fff;
+	/* Màu nền của dropdown */
+	color: #000;
+	/* Màu chữ trong dropdown */
+	border: 1px solid #ccc;
+	/* Màu và độ dày viền của dropdown */
+}
+
+/* Thay đổi màu nền và kiểu dáng của mục dropdown khi hover */
+.tagify__dropdown__item:hover {
+	background-color: #d0d0d0;
+}
+
+.tagify__dropdown__item {
+	font-size: 14px;
+	/* Thay đổi kích thước chữ ở đây */
+}
+
+/* Thay đổi kích thước chữ của input */
+.tagify__input {
+	font-size: 14px;
+	/* Thay đổi kích thước chữ ở đây */
+	width: 100%;
+	/* Đảm bảo chiều rộng chiếm toàn bộ không gian */
+	box-sizing: border-box;
+	/* Đảm bảo padding và border không ảnh hưởng đến kích thước tổng thể */
+	padding: 5px;
+}
+
+/* Thay đổi kích thước chữ của thẻ */
+.tagify__tag {
+	font-size: 14px;
+	/* Thay đổi kích thước chữ ở đây */
+}
+	</style>
+</head>
+
+<body class="bg-light-yellow">
+	<div id="loading">
+		<div class="spinner" style="margin-left: 37px;"></div>
+		<p class="text-center" style="width: 115px;">Đang đăng ký...</p>
+	</div>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top" data-scrollto-offset="0">
+		<div class="container-fluid d-flex align-items-center justify-content-between">
+			<div class="row">
+				<a href="/" class="col-6 logo d-flex align-items-center scrollto me-auto me-lg-0">
+					<img src="Images/Images-logo/logo.png" width="150" alt="Logo">
+				</a>
+			</div>
+			<div class="justify-content-end">
+
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li><a class="nav-link scrollto" href="index.html#banner">Bệnh viện Xuyên Á</a></li>
+						<li><a class="nav-link scrollto" href="index.html#intro">Giới thiệu</a></li>
+						<li><a class="nav-link scrollto" href="index.html#howchoose">Vì sao nên chọn Xuyên Á</a></li>
+						<li><a class="nav-link scrollto" href="index.html#package">Gói khám tổng quát</a></li>
+						<li><a class="nav-link scrollto" href="index.html#benefit">Lợi ích</a></li>
+						<li><a class="nav-link scrollto" href="index.html#note">Lưu ý</a></li>
+						<li><a class="nav-link scrollto" href="index.html#signup">Đăng ký</a></li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle d-none"></i>
+					<a class="btn-getstarted m-l-10" href="" onclick="scrollToElement('signup'); return false;">Đặt lịch
+						hẹn</a>
+				</nav>
+			</div>
+
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start banner -->
+	<section id="banner" class="hero-fullscreen hero-animated d-flex align-items-center">
+		<div class="container d-flex flex-column justify-content-center align-items-center text-center"
+			data-aos="zoom-out">
+		</div>
+	</section>
+	<!-- End banner -->
+
+	<main id="main">
+
+		<!-- Intro Section -->
+		<section id="intro" class="features-details">
+			<div class="container">
+				<div class="gy-4 features-item">
+					<div class="d-flex" data-aos="fade-up" data-aos-delay="100">
+						<div class="content">
+							<h3 style="color: rgb(43, 60, 132);">Giới thiệu</h3>
+							<div style="text-align: justify;">
+								<p>Sau hơn 10 năm thành lập và phát triển Bệnh viện Đa khoa Xuyên Á hiện có gần 30
+									chuyên khoa, cùng đội ngũ y bác sĩ dày dặn kinh nghiệm, máy móc, trang thiết bị y tế
+									hiện đại, đạt tiêu chuẩn chất lượng cao nhằm đảm bảo mục tiêu phục vụ tốt nhất, mang
+									lại trải nghiệm hoàn hảo nhất cho người bệnh.</p>
+								<p>Với mục tiêu mang lại cho quý khách hàng những thông tin tổng quát nhất về tình hình
+									sức khoẻ, tầm soát các nguy cơ bệnh lý ngay từ sớm nhằm đưa ra giải pháp chăm sóc
+									kịp thời, Bệnh viện Đa khoa Xuyên Á cung cấp các gói khám sức khoẻ tổng quát, từ cơ
+									bản đến nâng cao và linh hoạt theo từng nhu cầu của khách hàng dựa trên nguyên tắc:
+									<strong>Hiệu quả, nhanh chóng và tiết kiệm chi phí</strong>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Intro Section -->
+
+		<!-- Why Section -->
+		<section id="howchoose" class="pricing">
+			<div class="container" data-aos="fade-up">
+				<div class="section-header" data-aos="zoom-out">
+					<h2 class="underline-title metallic" style="font-weight: 700; color: rgb(43, 60, 132);">Vì sao nên
+						chọn Bệnh viện
+						Đa khoa Xuyên Á?</h2>
+				</div>
+
+				<div class="row gy-4" data-aos="fade-left">
+
+					<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+						<div class="box">
+							<span class="featured">Xuyên Á</span>
+							<h3 style="color: #07d5c0;">Chuyên gia uy tín</h3>
+							<p style="text-align: justify;">Đội ngũ chuyên gia, bác sĩ dày dặn kinh nghiệm, giỏi chuyên
+								môn, được đào tạo bài bản từ
+								các tổ chức đào tạo y khoa trong và ngoài nước.</p>
+							<p style="text-align: justify;">Đội ngũ nhân viên y tế tận tâm, chuyên nghiệp.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+						<div class="box">
+							<span class="featured">Xuyên Á</span>
+							<h3 style="color: #ff0071;">Cơ sở vật chất hiện đại</h3>
+							<p style="text-align: justify;">Hệ thống máy móc, trang thiết bị hiện đại, liên tục được đầu
+								tư, nâng cấp.</p>
+							<p style="text-align: justify;">Cơ sở vật chất tiện nghi, sạch sẽ. Không gian rộng rãi,
+								riêng tư.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+						<div class="box">
+							<span class="featured">Xuyên Á</span>
+							<h3 style="color: #65c600;">Gói khám toàn diện, linh hoạt</h3>
+							<p style="text-align: justify;">Các danh mục khám đa dạng, phù hợp với các nhu cầu khác nhau
+								của khách hàng.</p>
+							<p style="text-align: justify;">Quy trình khám khoa học, nhanh chóng.</p>
+							<p style="text-align: justify;">Không phải chờ đợi lâu.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+						<div class="box">
+							<span class="featured">Xuyên Á</span>
+							<h3 style="color: #ff901c;">Giá cả hợp lý</h3>
+							<p style="text-align: justify;">Chi phí hợp lý cùng nhiều chính sách ưu đãi hấp dẫn.</p>
+							<p style="text-align: justify;">Kết quả chẩn đoán chính xác.</p>
+							<p style="text-align: justify;">Đầy đủ các chuyên khoa chuyên sâu để điều trị.</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+		<!-- End Why Section -->
+
+		<!-- Package Section -->
+		<div id="package">
+			<section class="container-package">
+				<div class="section-header" data-aos="zoom-out">
+					<h2 class="underline-title metallic" style="font-weight: 700; color: rgb(43, 60, 132);">Các gói khám
+						sức khoẻ Nữ</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-md-6 d-flex justify-content-center" data-aos="fade-up">
+								<div class="card-package">
+									<div class="image-container">
+										<a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+											<div class="bg-image hover-overlay shadow-1-strong ripple mb-4"
+												data-mdb-ripple-color="light">
+												<img src="Images/Images-healthcare/goinucoban.jpg" class="img img-fluid"
+													alt="Ảnh giới thiệu gói khám" />
+												<a href="#!">
+													<div class="mask"
+														style="background-color: rgba(251, 251, 251, 0.15);"></div>
+												</a>
+											</div>
+										</a>
+										<a>
+											<h4>Gói khám cơ bản</h4>
+											<h4>2.824.600 đồng</h4>
+											<h3><strong>2.120.000 đồng</strong></h3>
+										</a>
+										<a class="btn-get-started m-l-10" id="nucoban" href="index.html#signup">Đăng ký
+											ngay</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 d-flex justify-content-center" data-aos="fade-up">
+								<div class="card-package card-package-margin">
+									<div class="image-container">
+										<a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+											<div class="bg-image hover-overlay shadow-1-strong ripple mb-4"
+												data-mdb-ripple-color="light">
+												<img src="Images/Images-healthcare/goinunangcao.jpg"
+													class="img img-fluid" alt="Ảnh giới thiệu gói khám" />
+												<a href="#!">
+													<div class="mask"
+														style="background-color: rgba(251, 251, 251, 0.15);"></div>
+												</a>
+											</div>
+										</a>
+										<a>
+											<h4>Gói khám nâng cao</h4>
+											<h4>5.837.600 đồng</h4>
+											<h3><strong>4.380.000 đồng</strong></h3>
+										</a>
+										<a class="btn-get-started m-l-10" id="nunangcao" href="index.html#signup">Đăng
+											ký ngay</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Package Section -->
+
+			<!-- Package Section -->
+			<section class="container-package">
+				<div class="section-header" data-aos="zoom-out">
+					<h2 class="underline-title" style="font-weight: 700; color: rgb(43, 60, 132);">Các gói khám sức khoẻ
+						Nam</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-md-6 d-flex justify-content-center" data-aos="fade-up">
+								<div class="card-package">
+									<div class="image-container">
+										<a href="" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+											<div class="bg-image hover-overlay shadow-1-strong ripple mb-4"
+												data-mdb-ripple-color="light">
+												<img src="Images/Images-healthcare/goinamcoban.jpg"
+													class="img img-fluid" alt="Ảnh giới thiệu gói khám" />
+												<a href="#!">
+													<div class="mask"
+														style="background-color: rgba(251, 251, 251, 0.15);"></div>
+												</a>
+											</div>
+										</a>
+										<a>
+											<h4>Gói khám cơ bản</h4>
+											<h4>2.488.600 đồng</h4>
+											<h3><strong>1.870.000 đồng</strong></h3>
+										</a>
+										<a class="btn-get-started m-l-10" id="namcoban" href="index.html#signup">Đăng ký
+											ngay</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 d-flex justify-content-center" data-aos="fade-up">
+								<div class="card-package card-package-margin">
+									<div class="image-container">
+										<a href="" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+											<div class="bg-image hover-overlay shadow-1-strong ripple mb-4"
+												data-mdb-ripple-color="light">
+												<img src="Images/Images-healthcare/goinamnangcao.jpg"
+													class="img img-fluid" alt="Ảnh giới thiệu gói khám" />
+												<a href="#!">
+													<div class="mask"
+														style="background-color: rgba(251, 251, 251, 0.15);"></div>
+												</a>
+											</div>
+										</a>
+										<a>
+											<h4>Gói khám nâng cao</h4>
+											<h4>5.314.600 đồng</h4>
+											<h3><strong>3.990.000 đồng</strong></h3>
+										</a>
+										<a class="btn-get-started m-l-10" id="namnangcao" href="index.html#signup">Đăng
+											ký ngay</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Package Section -->
+		</div>
+
+		<!-- Benefit Section -->
+		<section id="benefit" class="access">
+			<div class="section-header" data-aos="zoom-out">
+				<h2 class="underline-title" style="font-weight: 700; color: rgb(43, 60, 132);">Lợi ích khi kiểm tra sức
+					khỏe tổng quát</h2>
+			</div>
+			<div class="container m-b-15">
+				<div class="row g-5">
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+						<div class="service-item item-cyan position-relative">
+							<i class="bi bi-journal-check icon"></i>
+							<div>
+								<p>Đánh giá tổng quát tình hình sức khoẻ theo định kỳ.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+						<div class="service-item item-orange position-relative">
+							<i class="bi bi-clipboard2-pulse icon"></i>
+							<div>
+								<p>Tầm soát, phát hiện sớm các bệnh lý nếu có. Đặc biệt là các bệnh nguy hiểm như ung
+									thư, tim mạch, tiểu đường…</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+						<div class="service-item item-teal position-relative">
+							<i class="bi bi-easel icon"></i>
+							<div>
+								<p>Cơ hội tiếp cận sớm với các phác đồ điều trị, giúp tăng tỷ lệ khỏi bệnh, giảm nguy cơ
+									tái phát.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+						<div class="service-item item-red position-relative">
+							<i class="bi bi-clock icon"></i>
+							<div>
+								<p>Tiết kiệm thời gian khi một lần đi khám có thể đánh giá tình trạng của nhiều cơ quan
+									trong cơ thể. </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+						<div class="service-item item-indigo position-relative">
+							<i class="bi bi-cash-coin icon"></i>
+							<div>
+								<p>Tiết kiệm chi phí cho điều trị bệnh nếu như bệnh được phát hiện sớm, ở ngay những
+									giai đoạn đầu, khi chưa có những diễn biến phức tạp</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Benefit Section -->
+
+		<!-- Note Section -->
+		<section id="note" class="features">
+			<div class="section-header" data-aos="zoom-out">
+				<h2 class="underline-title" style="font-weight: 700; color: rgb(43, 60, 132);">Những lưu ý khi đến khám
+					sức khỏe</h2>
+			</div>
+			<div class="container" data-aos="fade-up">
+				<ul class="nav nav-tabs row gy-4 d-flex">
+					<li class="nav-item col-6 col-md-4 col-lg-2">
+						<a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+							<i class="bi bi-person-arms-up" style="color: #0dcaf0;"></i>
+							<h4>Trang phục</h4>
+						</a>
+					</li>
+
+					<li class="nav-item col-6 col-md-4 col-lg-2">
+						<a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+							<i class="bi bi-egg" style="color: #6610f2;"></i>
+							<h4>Nhịn ăn</h4>
+						</a>
+					</li>
+
+					<li class="nav-item col-6 col-md-4 col-lg-2">
+						<a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+							<i class="bi bi-info" style="color: #20c997;"></i>
+							<h4>Thông tin</h4>
+						</a>
+					</li>
+
+					<li class="nav-item col-6 col-md-4 col-lg-2">
+						<a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+							<i class="bi bi-box-seam" style="color: #df1529;"></i>
+							<h4>Hành trang</h4>
+						</a>
+					</li>
+
+					<li class="nav-item col-6 col-md-4 col-lg-2">
+						<a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
+							<i class="bi bi-person-standing-dress" style="color: #0d6efd;"></i>
+							<h4>Phụ khoa</h4>
+						</a>
+					</li>
+
+					<li class="nav-item col-6 col-md-4 col-lg-2">
+						<a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-6">
+							<i class="bi bi-emoji-grin" style="color: #fd7e14;"></i>
+							<h4>Tinh thần</h4>
+						</a>
+					</li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane fade active show" id="features-tab-1">
+						<div class="gy-4">
+							<div class="order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+								<p>
+									Mặc trang phục thoải mái, quần áo rộng rãi (áo ngắn tay hoặc tay áo có thể kéo lên
+									được)
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="features-tab-2">
+						<div class="gy-4">
+							<div class="order-2 order-lg-1">
+								<p>
+									Cần nhịn ăn 8 tiếng trước khi đến khám để thực hiện các xét nghiệm máu (đường huyết)
+									hoặc nội soi (nếu có)… và không uống sữa, nước ngọt hoặc các chất kích thích (như
+									trà, cà phê, rượu bia, hút thuốc lá…)
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="features-tab-3">
+						<div class="gy-4">
+							<div class="order-2 order-lg-1">
+								<p>
+									Thông báo cho nhân viên y tế khi đang mang thai hoặc đã từng phẫu thuật, lắp đặt các
+									dụng cụ kim loại trong cơ thể
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="features-tab-4">
+						<div class="gy-4">
+							<div class="order-2 order-lg-1">
+								<p>
+									Khách hàng cần mang theo các toa thuốc đang điều trị và sổ khám bệnh, các kết quả
+									chẩn đoán, chỉ định cận lâm sàng (nếu có)
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="features-tab-5">
+						<div class="gy-4">
+							<div class="order-2 order-lg-1">
+								<p>
+									Đối với khám phụ khoa: phụ nữ cần tránh thời gian đang trong chu kỳ kinh nguyệt,
+									tránh quan hệ tình dục, sử dụng thuốc đặt, thụt rửa âm đạo trước ngày khám
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane fade" id="features-tab-6">
+						<div class="gy-4">
+							<div class="order-2 order-lg-1">
+								<p>
+									Ngủ đủ giấc và giữ tinh thần thoải mái, tránh căng thẳng, lo lắng quá mức
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Note Section -->
+
+		<!-- ======= Contact Section ======= -->
+		<section id="signup" class="contact section background-image" data-aos="fade-up" data-aos-delay="100">
+			<div class="section-header" data-aos="zoom-out">
+				<h2 class="underline-title" style="font-weight: 700; color: rgb(43, 60, 132);">ĐĂNG KÝ LỊCH HẸN</h2>
+			</div>
+			<div class="container">
+				<div class="row gy-4">
+					<div class="col-lg-6">
+						<div class="row gy-4">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<form id="registrationForm" class="php-email-form form-shadow">
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" name="name"
+										class="form-control form-control-lg no-border custom-placeholder"
+										placeholder="Họ và tên" required>
+								</div>
+								<div class="col-md-6">
+									<input type="email"
+										class="form-control form-control-lg no-border custom-placeholder" name="email"
+										placeholder="Email (Không bắt buộc)">
+								</div>
+								<div class="col-md-12">
+									<input type="text" class="form-control form-control-lg no-border custom-placeholder"
+										name="numberphone" placeholder="Số điện thoại" required>
+								</div>
+								<div class="col-md-12">
+									<div class="custom-select">
+										<select name="goikham" id="goi-kham"
+											class="form-control form-control-lg no-border custom-placeholder">
+											<option value="" disabled selected>Chọn gói khám</option>
+											<option value="Gói Nữ cơ bản">Gói Nữ cơ bản</option>
+											<option value="Gói Nữ nâng cao">Gói Nữ nâng cao</option>
+											<option value="Gói Nam cơ bản">Gói Nam cơ bản</option>
+											<option value="Gói Nam nâng cao">Gói Nam nâng cao</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-12 gy-4">
+									<textarea class="form-control form-control-lg no-border custom-placeholder"
+										name="moreinfor" style="height: 110px;" rows="6"
+										placeholder="Thông tin thêm"></textarea>
+								</div>
+								<div class="col-md-12 m-b-10">
+									<input id="tags-input"
+										class="form-control form-control-lg no-border custom-placeholder" name="email"
+										placeholder="Bạn muốn thêm dịch vụ khám nào nữa không?">
+								</div>
+
+								<div>
+									<div class="form-check text-left fs-16">
+										<input class="form-check-input" type="checkbox" id="terms" name="confirmcheck"
+											required>
+										<label class="form-check-label m-b-10" for="terms">
+											Tôi xác nhận đăng ký thông tin.<a style="color:rgb(43, 60, 132);"
+												href="https://bvxuyena.com.vn" target="_blank"> Bệnh viện đa khoa Xuyên
+												Á </a>
+											sẽ liên hệ với bạn. Hãy nghe máy nhé!
+										</label>
+									</div>
+								</div>
+								<div class="col-md-12 text-center">
+									<button id="submitBtn" type="submit" disabled>Đăng ký</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Contact Section -->
+
+		<!-- Modal 1-->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<div class="row">
+						<div class="col-lg-6 modal-body">
+							<h4 class="m-t-5 m-b-10 text-center" style="color: rgb(139, 107, 34);">CÁC DỊCH VỤ CỦA GÓI
+								NỮ CƠ BẢN
+							</h4>
+							<div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
+								<table class="table custom-table">
+									<thead>
+										<tr>
+											<th style="width: 8%;">STT</th>
+											<th style="width: 80%;"><strong>Danh mục khám</strong></th>
+											<th style="width: 12%;"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr th:each="row, stat : ${dataPackageFemaleBasic}"
+											th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+											<td class="text-center"
+												th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+												<span></span>
+											</td>
+
+											<td
+												th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+												<strong style="color: #fff;"
+													th:if="${row.length > 1 and row[1] == 'featurename'}"
+													th:text="${row[0]}"></strong>
+												<span th:unless="${row.length > 1 and row[1] == 'featurename'}"
+													th:text="${row[0]}"></span>
+											</td>
+
+											<td th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'"
+												class="text-center">
+												<span class="bi bi-check-circle"
+													th:if="${row.length > 1 and row[1] != 'featurename'}"></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-lg-6 img-modal-background-1">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 2-->
+		<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<div class="row">
+						<div class="col-lg-6 modal-body">
+							<h4 class="m-t-5 m-b-10 text-center" style="color: rgb(139, 107, 34);">CÁC DỊCH VỤ CỦA GÓI
+								NỮ NÂNG CAO
+							</h4>
+							<div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
+								<table class="table custom-table" style="background-color: rgb(253, 255, 250);">
+									<thead>
+										<tr>
+											<th style="width: 8%;">STT</th>
+											<th style="width: 80%;"><strong>Danh mục khám</strong></th>
+											<th style="width: 12%;"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr th:each="row, stat : ${dataPackageFemaleAdvance}"
+											th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+											<td class="text-center"
+												th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+												<span></span>
+											</td>
+
+											<td
+												th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+												<strong style="color: #fff;"
+													th:if="${row.length > 1 and row[1] == 'featurename'}"
+													th:text="${row[0]}"></strong>
+												<span th:unless="${row.length > 1 and row[1] == 'featurename'}"
+													th:text="${row[0]}"></span>
+											</td>
+
+											<td th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'"
+												class="text-center">
+												<span class="bi bi-check-circle"
+													th:if="${row.length > 1 and row[1] != 'featurename'}"></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-lg-6 img-modal-background-2">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 3-->
+		<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<div class="row">
+						<div class="col-lg-6 modal-body">
+							<h4 class="m-t-5 m-b-10 text-center" style="color: rgb(139, 107, 34);">GÓI KHÁM NAM CƠ BẢN
+							</h4>
+							<div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
+								<table class="table custom-table" style="background-color: rgb(253, 255, 250);">
+									<thead>
+										<tr>
+											<th style="width: 8%;">STT</th>
+											<th style="width: 80%;"><strong>Danh mục khám</strong></th>
+											<th style="width: 12%;"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr th:each="row, stat : ${dataPackageMaleBasic}"
+											th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+											<td class="text-center"
+												th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+												<span></span>
+											</td>
+
+											<td
+												th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+												<strong style="color: #fff;"
+													th:if="${row.length > 1 and row[1] == 'featurename'}"
+													th:text="${row[0]}"></strong>
+												<span th:unless="${row.length > 1 and row[1] == 'featurename'}"
+													th:text="${row[0]}"></span>
+											</td>
+
+											<td th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'"
+												class="text-center">
+												<span class="bi bi-check-circle"
+													th:if="${row.length > 1 and row[1] != 'featurename'}"></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-lg-6 img-modal-background-3">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 4-->
+		<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<div class="row">
+						<div class="col-lg-6 modal-body">
+							<h4 class="m-t-5 m-b-10 text-center" style="color: rgb(139, 107, 34);">GÓI KHÁM NAM NÂNG CAO
+							</h4>
+							<div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
+								<table class="table custom-table" style="background-color: rgb(253, 255, 250);">
+									<thead>
+										<tr>
+											<th style="width: 8%;">STT</th>
+											<th style="width: 80%;"><strong>Danh mục khám</strong></th>
+											<th style="width: 12%;"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr th:each="row, stat : ${dataPackageMaleAdvance}"
+											th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+											<td class="text-center"
+												th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+												<span></span>
+											</td>
+
+											<td
+												th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'">
+												<strong style="color: #fff;"
+													th:if="${row.length > 1 and row[1] == 'featurename'}"
+													th:text="${row[0]}"></strong>
+												<span th:unless="${row.length > 1 and row[1] == 'featurename'}"
+													th:text="${row[0]}"></span>
+											</td>
+
+											<td th:classappend="${row.length > 1 and row[1] == 'featurename'} ? 'highlight'"
+												class="text-center">
+												<span class="bi bi-check-circle"
+													th:if="${row.length > 1 and row[1] != 'featurename'}"></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-lg-6 img-modal-background-4">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer text-center text-lg-start text-muted">
+		<section style="color: #fff;">
+			<div class="container text-center text-md-start mt-1">
+				<div class="row mt-3">
+					<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+						<h6 class="text-uppercase fw-bold mb-4">
+							Bệnh viện đa khoa Xuyên Á
+						</h6>
+						<p>
+							BVXA luôn giữ vững tiêu chí “CHĂM CHÚT TỪ NHỮNG VIỆC NHỎ NHẤT” để thực hiện cam kết
+							cung cấp dịch vụ y tế với chất lượng cao.
+						</p>
+
+						<h6 class="text-uppercase fw-bold mb-4">
+							Liên quan
+						</h6>
+						<p><i class="fas fa-solid fa-hospital me-2"></i><a class="text-white"
+								href="https://khudieutriungbuou.bvxuyena.com.vn/">Khu điều trị Ung bướu Kỹ thuật cao</a>
+						</p>
+						<p><i class="fas fa-solid fa-baby-carriage me-2"></i><a class="text-white"
+								href="https://uudaithaisan.bvxuyena.com.vn/">Ưu đãi thai sản</a></p>
+						<p><i class="fas fa-solid fa-piggy-bank me-2"></i><a class="text-white"
+								href="https://bvxuyena.com.vn/bvxa-uu-dai/tri-ky-niem-10-nam-ho-tro-vien-phi-hang-loat-dich-vu-tham-kham-xet-nghiem-chan-doan-hinh-anh">Hỗ
+								trợ viện phí</a></p>
+					</div>
+
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<h6 class="text-uppercase fw-bold mb-4">
+							Dịch vụ
+						</h6>
+
+						<p>
+							<a class="nav-link scrollto" href="index.html#banner">Bệnh viện Xuyên Á</a>
+						</p>
+						<p>
+							<a class="nav-link scrollto" href="index.html#advise">Tư vấn</a>
+						</p>
+						<p>
+							<a class="nav-link scrollto" href="index.html#intro">Giới thiệu</a>
+						</p>
+						<p>
+							<a class="nav-link scrollto" href="index.html#howchoose">Vì sao nên chọn Xuyên Á</a>
+						</p>
+						<p>
+							<a class="nav-link scrollto" href="index.html#package">Gói khám tổng quát</a>
+						</p>
+						<p>
+							<a class="nav-link scrollto" href="index.html#benefit">Lợi ích</a>
+						</p>
+						<p>
+							<a class="nav-link scrollto" href="index.html#note">Lưu ý</a>
+						</p>
+						<p>
+							<a class="nav-link scrollto" href="index.html#signup">Đăng ký</a>
+						</p>
+					</div>
+
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<h6 class="text-uppercase fw-bold mb-4">
+							Địa chỉ bệnh viện
+						</h6>
+						<p>
+							<i class="bi bi-geo-alt m-r-5"></i>42, Quốc lộ 22, Ấp Chợ,
+							Xã Tân Phú Trung,
+							Huyện Củ Chi, TP. HCM
+						</p>
+						<p>
+							<i class="bi bi-telephone m-r-5"></i>1800 9075
+						</p>
+						<p>
+							<i class="bi bi-truck m-r-5"></i>(028) 37966999
+						</p>
+						<p>
+							<i class="bi bi-envelope m-r-5"></i>info@bvxuyena.com.vn
+						</p>
+					</div>
+
+					<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+						<div class="me-5 d-none d-lg-block">
+						</div>
+
+						<div style="color: #fff;">
+							<a href="https://www.facebook.com/bvxuyena" class="me-4 text-reset">
+								<i class="bi bi-facebook"></i>
+							</a>
+							<a href="https://www.youtube.com/channel/UC2PBZTYZmYqLp4FwidbrT5w" class="me-4 text-reset">
+								<i class="bi bi-youtube"></i>
+							</a>
+							<a href="https://zalo.me/benhvienxuyena#sthash.Lf79DdDL.dpuf" class="me-4 text-reset">
+								<svg style="fill: #fff;" width="25" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+									viewBox="0 0 50 55">
+									<path
+										d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 15.580078 6 C 12.00899 9.7156859 10 14.518083 10 19.5 C 10 24.66 12.110156 29.599844 15.910156 33.339844 C 16.030156 33.549844 16.129922 34.579531 15.669922 35.769531 C 15.379922 36.519531 14.799687 37.499141 13.679688 37.869141 C 13.249688 38.009141 12.97 38.430859 13 38.880859 C 13.03 39.330859 13.360781 39.710781 13.800781 39.800781 C 16.670781 40.370781 18.529297 39.510078 20.029297 38.830078 C 21.379297 38.210078 22.270625 37.789609 23.640625 38.349609 C 26.440625 39.439609 29.42 40 32.5 40 C 36.593685 40 40.531459 39.000731 44 37.113281 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 33 15 C 33.55 15 34 15.45 34 16 L 34 25 C 34 25.55 33.55 26 33 26 C 32.45 26 32 25.55 32 25 L 32 16 C 32 15.45 32.45 15 33 15 z M 18 16 L 23 16 C 23.36 16 23.700859 16.199531 23.880859 16.519531 C 24.050859 16.829531 24.039609 17.219297 23.849609 17.529297 L 19.800781 24 L 23 24 C 23.55 24 24 24.45 24 25 C 24 25.55 23.55 26 23 26 L 18 26 C 17.64 26 17.299141 25.800469 17.119141 25.480469 C 16.949141 25.170469 16.960391 24.780703 17.150391 24.470703 L 21.199219 18 L 18 18 C 17.45 18 17 17.55 17 17 C 17 16.45 17.45 16 18 16 z M 27.5 19 C 28.11 19 28.679453 19.169219 29.189453 19.449219 C 29.369453 19.189219 29.65 19 30 19 C 30.55 19 31 19.45 31 20 L 31 25 C 31 25.55 30.55 26 30 26 C 29.65 26 29.369453 25.810781 29.189453 25.550781 C 28.679453 25.830781 28.11 26 27.5 26 C 25.57 26 24 24.43 24 22.5 C 24 20.57 25.57 19 27.5 19 z M 38.5 19 C 40.43 19 42 20.57 42 22.5 C 42 24.43 40.43 26 38.5 26 C 36.57 26 35 24.43 35 22.5 C 35 20.57 36.57 19 38.5 19 z M 27.5 21 C 27.39625 21 27.29502 21.011309 27.197266 21.03125 C 27.001758 21.071133 26.819727 21.148164 26.660156 21.255859 C 26.500586 21.363555 26.363555 21.500586 26.255859 21.660156 C 26.148164 21.819727 26.071133 22.001758 26.03125 22.197266 C 26.011309 22.29502 26 22.39625 26 22.5 C 26 22.60375 26.011309 22.70498 26.03125 22.802734 C 26.051191 22.900488 26.079297 22.994219 26.117188 23.083984 C 26.155078 23.17375 26.202012 23.260059 26.255859 23.339844 C 26.309707 23.419629 26.371641 23.492734 26.439453 23.560547 C 26.507266 23.628359 26.580371 23.690293 26.660156 23.744141 C 26.819727 23.851836 27.001758 23.928867 27.197266 23.96875 C 27.29502 23.988691 27.39625 24 27.5 24 C 27.60375 24 27.70498 23.988691 27.802734 23.96875 C 28.487012 23.82916 29 23.22625 29 22.5 C 29 21.67 28.33 21 27.5 21 z M 38.5 21 C 38.39625 21 38.29502 21.011309 38.197266 21.03125 C 38.099512 21.051191 38.005781 21.079297 37.916016 21.117188 C 37.82625 21.155078 37.739941 21.202012 37.660156 21.255859 C 37.580371 21.309707 37.507266 21.371641 37.439453 21.439453 C 37.303828 21.575078 37.192969 21.736484 37.117188 21.916016 C 37.079297 22.005781 37.051191 22.099512 37.03125 22.197266 C 37.011309 22.29502 37 22.39625 37 22.5 C 37 22.60375 37.011309 22.70498 37.03125 22.802734 C 37.051191 22.900488 37.079297 22.994219 37.117188 23.083984 C 37.155078 23.17375 37.202012 23.260059 37.255859 23.339844 C 37.309707 23.419629 37.371641 23.492734 37.439453 23.560547 C 37.507266 23.628359 37.580371 23.690293 37.660156 23.744141 C 37.739941 23.797988 37.82625 23.844922 37.916016 23.882812 C 38.005781 23.920703 38.099512 23.948809 38.197266 23.96875 C 38.29502 23.988691 38.39625 24 38.5 24 C 38.60375 24 38.70498 23.988691 38.802734 23.96875 C 39.487012 23.82916 40 23.22625 40 22.5 C 40 21.67 39.33 21 38.5 21 z">
+									</path>
+								</svg>
+							</a>
+							<a href="https://bvxuyena.com.vn/" class="me-4 text-reset">
+								<i class="bi bi-google"></i>
+							</a>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+	</footer>
+	<!-- Footer -->
+
+	<a href="https://zalo.me/benhvienxuyena#sthash.Lf79DdDL.dpuf" class="zalo-icon" target="_blank">
+		<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55" viewBox="0 0 48 48">
+			<path fill="#2962ff"
+				d="M15,36V6.827l-1.211-0.811C8.64,8.083,5,13.112,5,19v10c0,7.732,6.268,14,14,14h10	c4.722,0,8.883-2.348,11.417-5.931V36H15z">
+			</path>
+			<path fill="#eee"
+				d="M29,5H19c-1.845,0-3.601,0.366-5.214,1.014C10.453,9.25,8,14.528,8,19	c0,6.771,0.936,10.735,3.712,14.607c0.216,0.301,0.357,0.653,0.376,1.022c0.043,0.835-0.129,2.365-1.634,3.742	c-0.162,0.148-0.059,0.419,0.16,0.428c0.942,0.041,2.843-0.014,4.797-0.877c0.557-0.246,1.191-0.203,1.729,0.083	C20.453,39.764,24.333,40,28,40c4.676,0,9.339-1.04,12.417-2.916C42.038,34.799,43,32.014,43,29V19C43,11.268,36.732,5,29,5z">
+			</path>
+			<path fill="#2962ff"
+				d="M36.75,27C34.683,27,33,25.317,33,23.25s1.683-3.75,3.75-3.75s3.75,1.683,3.75,3.75	S38.817,27,36.75,27z M36.75,21c-1.24,0-2.25,1.01-2.25,2.25s1.01,2.25,2.25,2.25S39,24.49,39,23.25S37.99,21,36.75,21z">
+			</path>
+			<path fill="#2962ff" d="M31.5,27h-1c-0.276,0-0.5-0.224-0.5-0.5V18h1.5V27z"></path>
+			<path fill="#2962ff"
+				d="M27,19.75v0.519c-0.629-0.476-1.403-0.769-2.25-0.769c-2.067,0-3.75,1.683-3.75,3.75	S22.683,27,24.75,27c0.847,0,1.621-0.293,2.25-0.769V26.5c0,0.276,0.224,0.5,0.5,0.5h1v-7.25H27z M24.75,25.5	c-1.24,0-2.25-1.01-2.25-2.25S23.51,21,24.75,21S27,22.01,27,23.25S25.99,25.5,24.75,25.5z">
+			</path>
+			<path fill="#2962ff"
+				d="M21.25,18h-8v1.5h5.321L13,26h0.026c-0.163,0.211-0.276,0.463-0.276,0.75V27h7.5	c0.276,0,0.5-0.224,0.5-0.5v-1h-5.321L21,19h-0.026c0.163-0.211,0.276-0.463,0.276-0.75V18z">
+			</path>
+		</svg>
+	</a>
+
+	<a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+		<i class="bi bi-arrow-up-short"></i>
+	</a>
+	<div id="preloader"></div>
+
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+	<script src="JS/js/main.js"></script>
+	<script src="Js/main.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var nucoban = document.getElementById('nucoban');
+			var nunangcao = document.getElementById('nunangcao');
+			var namcoban = document.getElementById('namcoban');
+			var namnangcao = document.getElementById('namnangcao');
+			var signupSection = document.getElementById('signup');
+			var selectBox = document.getElementById('goi-kham');
+
+			nucoban.addEventListener('click', function (event) {
+				event.preventDefault(); // Prevent the default anchor behavior
+
+				// Scroll to the signup section
+				signupSection.scrollIntoView({behavior: 'smooth'});
+
+				// Set the select box value
+				selectBox.value = 'Gói Nữ cơ bản'; // Adjust to the correct value if needed
+			});
+
+			nunangcao.addEventListener('click', function (event) {
+				event.preventDefault(); // Prevent the default anchor behavior
+
+				// Scroll to the signup section
+				signupSection.scrollIntoView({behavior: 'smooth'});
+
+				// Set the select box value
+				selectBox.value = 'Gói Nữ nâng cao'; // Adjust to the correct value if needed
+			});
+
+			namcoban.addEventListener('click', function (event) {
+				event.preventDefault(); // Prevent the default anchor behavior
+
+				// Scroll to the signup section
+				signupSection.scrollIntoView({behavior: 'smooth'});
+
+				// Set the select box value
+				selectBox.value = 'Gói Nam cơ bản'; // Adjust to the correct value if needed
+			});
+
+			namnangcao.addEventListener('click', function (event) {
+				event.preventDefault(); // Prevent the default anchor behavior
+
+				// Scroll to the signup section
+				signupSection.scrollIntoView({behavior: 'smooth'});
+
+				// Set the select box value
+				selectBox.value = 'Gói Nam nâng cao'; // Adjust to the correct value if needed
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("registrationProblemForm").addEventListener("submit", function (event) {
+				event.preventDefault(); // Ngăn chặn gửi biểu mẫu truyền thống
+
+				// Hiển thị thông báo loading
+				document.getElementById("loading").style.display = "block";
+
+				var formData = new FormData(this);
+				var jsonData = {};
+				formData.forEach((value, key) => {
+					jsonData[key] = value;
+				});
+
+				fetch('/book-advice', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(jsonData)
+				})
+					.then(response => response.json())
+					.then(data => {
+
+						// Ẩn thông báo loading
+						document.getElementById("loading").style.display = "none";
+
+						if (data.success) {
+							iziToast.success({
+								title: 'OK',
+								message: 'Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn. Hãy nghe máy nhé!',
+								position: 'topRight',
+								class: 'custom-izitoast',
+								backgroundColor: '#263D89',
+								titleColor: '#FFFFFF',
+								messageColor: '#FFFFFF'
+							});
+						} else {
+							iziToast.error({
+								title: 'Fail',
+								message: 'Đăng ký thất bại!',
+								position: 'topRight',
+								class: 'custom-izitoast',
+								backgroundColor: '#263D89',
+								titleColor: '#FFFFFF',
+								messageColor: '#FFFFFF'
+							});
+						}
+					})
+					.catch(error => {
+
+						// Ẩn thông báo loading
+						document.getElementById("loading").style.display = "none";
+
+						iziToast.error({
+							title: 'Error',
+							message: 'Có lỗi xảy ra!',
+							position: 'topRight',
+							class: 'custom-izitoast',
+							backgroundColor: '#263D89',
+							titleColor: '#FFFFFF',
+							messageColor: '#FFFFFF'
+						});
+					});
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("registrationForm").addEventListener("submit", function (event) {
+				event.preventDefault(); // Ngăn chặn gửi biểu mẫu truyền thống
+
+				// Hiển thị thông báo loading
+				document.getElementById("loading").style.display = "block";
+
+				var formData = new FormData(this);
+				var jsonData = {};
+				formData.forEach((value, key) => {
+					jsonData[key] = value;
+				});
+
+				fetch('/book-appointment', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(jsonData)
+				})
+					.then(response => response.json())
+					.then(data => {
+
+						// Ẩn thông báo loading
+						document.getElementById("loading").style.display = "none";
+
+						if (data.success) {
+							iziToast.success({
+								title: 'OK',
+								message: 'Đăng ký thành công! Chúng tôi sẽ liên hệ với bạn. Hãy nghe máy nhé!',
+								position: 'topRight',
+								class: 'custom-izitoast',
+								backgroundColor: '#263D89',
+								titleColor: '#FFFFFF',
+								messageColor: '#FFFFFF'
+							});
+						} else {
+							iziToast.error({
+								title: 'Fail',
+								message: 'Đăng ký thất bại!',
+								position: 'topRight',
+								class: 'custom-izitoast',
+								backgroundColor: '#263D89',
+								titleColor: '#FFFFFF',
+								messageColor: '#FFFFFF'
+							});
+						}
+					})
+					.catch(error => {
+
+						// Ẩn thông báo loading
+						document.getElementById("loading").style.display = "none";
+
+						iziToast.error({
+							title: 'Error',
+							message: 'Có lỗi xảy ra!',
+							position: 'topRight',
+							class: 'custom-izitoast',
+							backgroundColor: '#263D89',
+							titleColor: '#FFFFFF',
+							messageColor: '#FFFFFF'
+						});
+					});
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener("scroll", function () {
+			var scrollTop = document.querySelector('.scroll-top');
+			var zaloIcon = document.querySelector('.zalo-icon');
+
+			// Kiểm tra sự hiện diện của lớp 'active'
+			if (scrollTop.classList.contains('active')) {
+				// Khi scroll-top hiển thị
+				zaloIcon.style.bottom = '70px'; // Điều chỉnh vị trí của icon Zalo
+			} else {
+				// Khi scroll-top không hiển thị
+				zaloIcon.style.bottom = '20px'; // Trở lại vị trí cũ
+			}
+		});
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const form = document.getElementById('registrationForm');
+			const submitButton = document.getElementById('submitBtn');
+			const termsCheckbox = document.getElementById('terms');
+			const formFields = Array.from(form.querySelectorAll('input[required], select[required]'));
+
+			function checkFormValidity() {
+				const allFieldsFilled = formFields.every(field => field.value.trim() !== '');
+				submitButton.disabled = !(allFieldsFilled && termsCheckbox.checked);
+			}
+
+			formFields.forEach(field => {
+				field.addEventListener('input', checkFormValidity);
+			});
+			termsCheckbox.addEventListener('change', checkFormValidity);
+		});
+	</script>
+
+	<script>
+		function scrollToElement(id) {
+			var element = document.getElementById(id);
+			if (element) {
+				element.scrollIntoView({behavior: 'smooth'});
+			}
+		}
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Khởi tạo số thứ tự cho từng modal
+			let modalCounters = {
+				exampleModal: 1,
+				exampleModal2: 1,
+				exampleModal3: 1,
+				exampleModal4: 1
+			};
+
+			// Hàm cập nhật số thứ tự trong một modal cụ thể
+			function updateModalCounter(modalId) {
+				let count = modalCounters[modalId];
+				document.querySelectorAll(`#${modalId} .custom-table tbody tr`).forEach(function (row) {
+					let span = row.querySelector('td span');
+					if (!row.classList.contains('highlight') && span) {
+						span.textContent = count;
+						count++;
+					}
+				});
+				modalCounters[modalId] = count; // Cập nhật số thứ tự cho modal
+			}
+
+			// Gọi hàm cập nhật cho từng modal
+			updateModalCounter('exampleModal');
+			updateModalCounter('exampleModal2');
+			updateModalCounter('exampleModal3');
+			updateModalCounter('exampleModal4');
+		});
+	</script>
+
+	<script>
+		// Tạo một mảng các gợi ý
+		var whitelist = ["Định lượng TSH",
+			"Định lượng FT3",
+			"Định lượng FT4",
+			"HBsAg miễn dịch tự động",
+			"HBsAb định lượng",
+			"HCV Ab miễn dịch tự động",
+			"Dấu ấn ung thư", "featurename",
+			"Định lượng PSA toàn phần - dành cho nam",
+			"Định lượng PSA tự do - dành cho nam",
+			"Định lượng AFP",
+			"Định lượng CA 19-9",
+			"Định lượng CEA",
+			"Định lượng Ca 15-3 - dành cho nữ",
+			"Định lượng Ca 125 - dành cho nữ",
+			"Đo mật độ xương"];
+
+		// Khởi tạo Tagify cho input
+		var input = document.getElementById('tags-input');
+		var tagify = new Tagify(input, {
+			whitelist: whitelist,
+			dropdown: {
+				enabled: 1, // Tự động mở dropdown khi nhập dữ liệu
+				maxItems: 15, // Số lượng mục tối đa trong dropdown
+				closeOnSelect: false // Giữ dropdown mở khi chọn mục
+			}
+		});
+	</script>
+
+</body>
+
+</html>
